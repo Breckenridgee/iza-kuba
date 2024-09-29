@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 200px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.image {
+  width: 50%; /* Możesz dostosować szerokość */
+  max-height: 700px; /* Dostosuj wysokość obrazków */
+  object-fit: cover; /* Utrzymuje proporcje obrazu */
+}
+
+.text {
+  width: 50%; /* Możesz dostosować szerokość */
+  padding: 20px; /* Dostosuj padding */
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Existing styles here... */
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your design */
+  .section {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align the content */
+    text-align: center; /* Center text for mobile */
+  }
+
+  .content {
+    flex-direction: column; /* Ensure that content stacks vertically */
+    width: 100%; /* Use full width on mobile */
+  }
+
+  .image {
+    width: 100%; /* Make image take full width */
+    max-height: 300px; /* Adjust the height as needed for mobile */
+  }
+
+  .text {
+    width: 100%; /* Ensure text also uses full width */
+    padding: 10px; /* Adjust padding for mobile */
+  }
+}

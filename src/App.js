@@ -1,36 +1,57 @@
 import React from 'react';
 import './App.css';
 import ImageUpload from './ImageUpload';
+import cava from './assets/photos/cava.jpg'; 
 
 function App() {
   return (
     <div className="App">
       <header>
-        <h1>Welcome to Our Wedding</h1>
+        <h1>Nasza Historia... kolejny wspólny krok</h1>
       </header>
       
-      <section id="about">
-        <h2>About Us</h2>
-        <p>Here you can write a small story about you and your partner.</p>
+      <section id="wedding" className="section">
+        <div className="content">
+          <img src={cava} alt="Ślub" className="image" />
+          <div className="text">
+            <h2>Ślub</h2>
+            <p>Wszystko co musisz wiedzieć o ślubie.</p>
+          </div>
+        </div>
       </section>
 
-      <section id="details">
-        <h2>Wedding Details</h2>
-        <p>Provide information like date, time, venue, and dress code.</p>
+      <section id="party" className="section">
+        <div className="content reverse">
+          <div className="text">
+            <h2>Wesele</h2>
+            <p>Wszystko co musisz wiedzieć o weselu.</p>
+          </div>
+          <img src={cava} alt="Wesele" className="image" />
+        </div>
       </section>
 
-      <section id="rsvp">
-        <h2>RSVP</h2>
-        <p>Link to an RSVP form or provide details on how guests can RSVP.</p>
+      <section id="afterparty" className="section">
+        <div className="content">
+          <img src={cava} alt="Poprawiny" className="image" />
+          <div className="text">
+            <h2>Poprawiny</h2>
+            <p>Wszystko co musisz wiedzieć o poprawinach.</p>
+          </div>
+        </div>
       </section>
 
-      <section id="gallery">
-        <h2>Wedding Gallery</h2>
-        <ImageUpload />
+      <section id="gallery" className="section">
+        <div className="content reverse">
+          <div className="text">
+            <h2>Nasza wspólna galeria</h2>
+            <p>Dodaj zdjęcia abyśmy od razu mogli wspominać nasz wyjątkowy dzień.</p>
+          </div>
+          <ImageUpload />
+        </div>
       </section>
 
       <footer>
-        <p>&copy; 2024 Your Names</p>
+        <p>&copy; 2025 Iza & Kuba</p>
       </footer>
     </div>
   );
