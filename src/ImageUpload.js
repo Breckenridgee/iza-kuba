@@ -2,12 +2,9 @@ import React, { useState, useRef } from "react";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { storage } from "./firebase";
 import Swal from 'sweetalert2';
-// Removed the Slider import
-// import Slider from "react-slick"; 
 
 function ImageUpload() {
   const [images, setImages] = useState([]);
-  const [imageUrls, setImageUrls] = useState([]);
   const fileInputRef = useRef(null);
 
   const handleImageChange = (e) => {
@@ -37,9 +34,8 @@ function ImageUpload() {
         );
       });
 
-      Promise.all(uploadPromises).then((urls) => {
-        setImageUrls(urls);
-        setImages([]);
+      Promise.all(uploadPromises).then(() => {
+        setImages([]); // Clear the images array after upload
         Swal.fire({
           title: 'Mamy to!',
           text: getRandomMessage(),
@@ -115,8 +111,6 @@ function ImageUpload() {
           Prześlij zdjęcia
         </button>
       </div>
-
-      {/* Removed the carousel section */}
     </div>
   );
 }
@@ -177,13 +171,6 @@ const styles = {
     fontSize: '16px',
     textAlign: 'center',
   },
-  // Removed carouselContainer and imageWrapper styles
-  // image: {
-  //   width: '100%',
-  //   maxHeight: '400px',
-  //   borderRadius: '10px',
-  //   boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-  // },
 };
 
 export default ImageUpload;

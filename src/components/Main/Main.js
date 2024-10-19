@@ -132,7 +132,7 @@ const styles = {
     color: '#fff',
     fontSize: '18px',
   },
-  sectionDescription: {
+  sectionDescription2: {
     color: '#E6B9B9',
     fontSize: '18px',
   },
