@@ -21,7 +21,9 @@ const App = () => {
         <div style={{ ...styles.rectangle, backgroundColor: '#E6B9B9' }} />
         <div style={styles.textContainer}>
           <h2 style={styles.sectionTitle}>Ślub</h2>
-          <p style={styles.sectionDescription}>Wszystko co musisz wiedzieć o ślubie.</p>
+          <p style={styles.sectionDescription}>Data: 18.06.2025r</p>
+          <p style={styles.sectionDescription}>Miejsce: Hotel Dębowy w Bielawie</p>
+          <p style={styles.sectionDescription}>Janusza Korczaka 1, 58-260 Bielawa</p>
         </div>
       </section>
 
