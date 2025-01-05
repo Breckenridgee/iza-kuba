@@ -1,11 +1,56 @@
 import React from 'react';
 import '../../App.css';
-import ImageUpload from '../../ImageUpload.js';
+// import ImageUpload from '../../ImageUpload.js';
+import Carousel from '../Carousel/Carousel.js';
+import Counter from '../Counter/Counter.js';
+import Time from '../Time/Time.js';
+import Banner from '../Banner/Banner.js';
+import Wedding from '../Wedding/Wedding';
+import img3 from '../../assets/photos/Us/IMG_5276.png';
+import img4 from '../../assets/photos/Us/IMG_5662.png';
+import img1 from '../../assets/photos/Us/IMG_5662.png';
+import tinderPic from '../../assets/photos/Us/IMG_3885.png';
+import meetPic from '../../assets/photos/Us/IMG_2347.png';
+import familyPic from '../../assets/photos/Us/IMG_3934.png';
+import engagementPic from '../../assets/photos/Us/engagementPic.png';
+
+const images = [img1, img3, img4];
+const events = [
+  {
+    image: meetPic,
+    title: "Poznaliśmy się",
+    date: "Środa 26 padziernika 2021",
+    description: "Cała nasza przygoda zaczęła się dwóch swipów w prawo",
+  },
+  {
+    image: tinderPic,
+    title: "Pierwsza randka",
+    date: "Wrocław, Piątek 29 października 2021",
+    description: "Długo nam nie zajęło zdecydowanie się na pierwsze spotkanie w cztery oczy. Choć nie mieliśmy wtedy duo czasu wiedzieliśmy, że na jednym spotkaniu się nie skończy.",
+  },
+  {
+    image: familyPic,
+    title: "Nasza rodzinka się powiększa",
+    date: "Dąbrowa Górnicza, Sobota 12 sierpnia 2023",
+    description: "Choć jedno z nas cały czas uważa, że to nie była nasz wspólna decyzja, ruszamy w drogę do Dąbrowy Górniczej i wracamy z kruszyną, która całkowicie odmienia nasze życie",
+  },
+  {
+    image: engagementPic,
+    title: "Zaręczyny",
+    date: "Cypr, Niedziela 19 listopada 2023",
+    description: "I kiedy już myśleliśmy, że nic nas nie zaskoczy, Kuba postanowił zmienić nasze kolejne wspólne wakacje w nowy początek naszego życia",
+  },
+];
 
 const App = () => {
   return (
     <div style={styles.container}>
-      <header style={styles.header}>
+      {/* <Banner/> */}
+       <Carousel images={images}/>
+       <Counter />
+       <Time events={events} />
+       <Wedding />
+      {/* <header style={styles.header}>
         <nav style={styles.nav}>
           <ul style={styles.navList}>
             <li style={styles.navItem}>Ślub</li>
@@ -50,7 +95,7 @@ const App = () => {
           <p style={styles.sectionDescription2}>Dodaj zdjęcia, abyśmy od razu mogli wspominać nasz wyjątkowy dzień.</p>
           <ImageUpload />
         </div>
-      </section>
+      </section> */}
 
       <footer style={styles.footer}>
         <p style={styles.footerText}>&copy; 2025 Iza & Kuba</p>

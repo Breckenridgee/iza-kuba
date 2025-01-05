@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height for the viewport */
+  overflow: hidden; /* Hide the overflowing images */
+  background-color: black; /* Optional: Background to ensure visibility */
+}
+
+.carousel {
+  display: flex;
+  width: fit-content; /* Ensures the line of images adjusts dynamically */
+  animation: scroll 100s linear infinite; /* Smooth infinite scroll */
+}
+
+.carousel-image {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 100vw; /* Each image takes up 100% of the viewport width */
+  height: 100vh; /* Full viewport height */
+}
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales to fill the space */
+}
+
+.carousel-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with opacity */
+  z-index: 1;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  padding: 50px;
+  height: 20%;
+  text-align: center;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-family: 'Dancing Script', cursive;
+}
+
+.carousel-text h1 {
+  font-size: 5rem; 
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Poppins', cursive; /* Apply Poppins font for text */
+}
+.carousel-text p {
+  font-size: 5rem;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif; /* Use sans-serif instead of serif for better consistency */
+  font-weight: 100; /* Thin font weight */
+  font-style: cursive; /* Ensure no italicization */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0); /* Start at the first image */
+  }
+  to {
+    transform: translateX(-100%); /* Slide to the left by one image width */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-text h1 {
+    font-size: 200%; /* Larger font for the main text */
+  }
+  .carousel-text p {
+    font-size: 150%; /* Smaller font for the subtext */
+  }
+}
