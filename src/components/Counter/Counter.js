@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./Counter.css";
 
 const Counter = () => {
-  const targetDate = new Date("2025-06-18T15:00:00Z"); // Target date: June 18, 2025
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  function calculateTimeLeft() {
+  const calculateTimeLeft = useCallback(() => {
+    const targetDate = new Date("2025-06-18T15:00:00Z"); // Target date: June 18, 2025
     const now = new Date();
     const difference = targetDate - now;
 
@@ -20,7 +17,9 @@ const Counter = () => {
       minutes: Math.floor((difference / 1000 / 60) % 60),
       seconds: Math.floor((difference / 1000) % 60),
     };
-  }
+  }, []);
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -28,7 +27,8 @@ const Counter = () => {
     }, 1000);
 
     return () => clearInterval(timer); // Cleanup the interval on component unmount
-  }, []);
+  }, [calculateTimeLeft]); // Dependency added to avoid warnings
+
 
   return (
     <div className="counter-container">
