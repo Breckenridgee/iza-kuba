@@ -25,10 +25,13 @@ const Wedding = () => {
           <span>Środa 19 czerwca 2025</span>
         </div>
       </div>
-      <button href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x470e481174554395:0x74fdb8d2371e60f6?sa=X&ved=1t:8290&ictx=111">
-        <p>Janusza Korczaka 1, 58-260 Bielawa</p>
-        <p>Znajdź na mapie</p>
-      </button>
+      <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x470e481174554395:0x74fdb8d2371e60f6?sa=X&ved=1t:8290&ictx=111" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   className="button">
+  <p>Janusza Korczaka 1, 58-260 Bielawa</p>
+  <p>Znajdź na mapie</p>
+</a>
     </div>
   );
 };
