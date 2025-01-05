@@ -3,7 +3,7 @@ import "./Time.css";
 
 const Time = ({ events }) => {
   return (
-    <div>
+    <div className="timeline-container">
       <p className="timeline-title">Nasz historia</p>
             <div className="timeline">
       {events.map((event, index) => (

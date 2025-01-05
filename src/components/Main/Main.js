@@ -4,7 +4,6 @@ import '../../App.css';
 import Carousel from '../Carousel/Carousel.js';
 import Counter from '../Counter/Counter.js';
 import Time from '../Time/Time.js';
-import Banner from '../Banner/Banner.js';
 import Wedding from '../Wedding/Wedding';
 import img3 from '../../assets/photos/Us/IMG_5276.png';
 import img4 from '../../assets/photos/Us/IMG_5662.png';

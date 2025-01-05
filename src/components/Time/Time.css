@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.timeline-container {
+  background-color: var(--secondary-color);
+}
+
 .timeline {
   position: relative;
   margin: 0 auto;

@@ -7,19 +7,19 @@ const Wedding = () => {
       <h1>Kolejny krok zaplanowaliśmy w wyjątkowym miejscu..</h1>
       <div className="wedding-card-conteiner">
         <div className="wedding-card">
-          <img></img>
+          <img alt="Ogród"></img>
           <h1>Ślub</h1>
           <p>Na ceremonię zapraszamy was do ogrodu Hotelu Dębowy</p>
           <span>Środa 18 czerwca 2025 16:30</span>
         </div>
         <div className="wedding-card">
-        <img></img>
+          <img alt="Wesele"></img>
           <h1>Wesele</h1>
           <p></p>
           <span>Środa 18 czerwca 2025</span>
         </div>
         <div className="wedding-card">
-        <img></img>
+         <img alt="Poprawiny"></img>
           <h1>Poprawiny</h1>
           <p></p>
           <span>Środa 19 czerwca 2025</span>
