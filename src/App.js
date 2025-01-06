@@ -28,7 +28,7 @@ const App = () => {
     <Router>
       <Routes>
         {/* <Route path="/" element={isLoggedIn ? <Main /> : <Navigate to="/pass" />} /> */}
-        <Route path="/pass" element={<Main />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </Router>
   );
