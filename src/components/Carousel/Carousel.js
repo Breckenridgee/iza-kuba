@@ -16,7 +16,7 @@ const Carousel = ({images}) => {
       </div>
       <div className="carousel-text">
           <h1>Będzie ślub!</h1>
-          <p>18/06/2025</p>
+          <h2>18/06/2025</h2>
         </div>
     </div>
   );

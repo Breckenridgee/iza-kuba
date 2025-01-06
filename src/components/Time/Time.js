@@ -4,7 +4,7 @@ import "./Time.css";
 const Time = ({ events }) => {
   return (
     <div className="timeline-container">
-      <p className="timeline-title">Nasz historia</p>
+      <h1 className="timeline-title">Nasz historia</h1>
             <div className="timeline">
       {events.map((event, index) => (
         <div className="timeline-item" key={index}>
@@ -12,8 +12,8 @@ const Time = ({ events }) => {
             <img src={event.image} alt={event.title} className="image" />
           </div>
           <div className="text-container">
-            <h3>{event.title}</h3>
-            <h2>{event.date}</h2>
+            <h4>{event.title}</h4>
+            <p>{event.date}</p>
             <p>{event.description}</p>
           </div>
         </div>

@@ -4,23 +4,23 @@ import "./Wedding.css";
 const Wedding = () => {
   return (
     <div className="wedding-container">
-      <h1>Kolejny krok zaplanowaliśmy w wyjątkowym miejscu..</h1>
+      <h2>Kolejny krok zaplanowaliśmy w wyjątkowym miejscu..</h2>
       <div className="wedding-card-conteiner">
         <div className="wedding-card">
           <img alt="Ogród"></img>
-          <h1>Ślub</h1>
+          <h2>Ślub</h2>
           <p>Na ceremonię zapraszamy was do ogrodu Hotelu Dębowy</p>
           <span>Środa 18 czerwca 2025 16:30</span>
         </div>
         <div className="wedding-card">
           <img alt="Wesele"></img>
-          <h1>Wesele</h1>
+          <h2>Wesele</h2>
           <p></p>
           <span>Środa 18 czerwca 2025</span>
         </div>
         <div className="wedding-card">
          <img alt="Poprawiny"></img>
-          <h1>Poprawiny</h1>
+          <h2>Poprawiny</h2>
           <p></p>
           <span>Środa 19 czerwca 2025</span>
         </div>

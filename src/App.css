@@ -7,15 +7,74 @@
   --default-color: #800020;
   --secondary-color: #F7E7CE;
   --default-font: 'Poppins', cursive;
+  --default-desktop-h1-font-size: 70px;
+  --default-mobile-h1-font-size: 35px;
+  --default-desktop-h2-font-size: 50px;
+  --default-mobile-h2-font-size: 25px;
+  --default-desktop-h3-font-size: 40px;
+  --default-mobile-h3-font-size: 20px;
+  --default-desktop-h4-font-size: 30px;
+  --default-mobile-h4-font-size: 15px;
+  --default-desktop-p-font-size: 25px;
+  --default-mobile-p-font-size: 12.5px;
+  --default-desktop-span-font-size: 20px;
+  --default-mobile-span-font-size: 10px;
 }
 
 body {
-  color: var(--default-color); /* Set the default text color */
-  background-color: #fff; /* Optional: Define a default background color */
+  color: var(--default-color);
+  background-color: var(--secondary-color);
+  font-family: var(--default-font);
+  font-style: cursive;
+  text-align: center;
 }
 
-.App {
-  text-align: center;
+h1 {
+  font-size: var(--default-desktop-h1-font-size);
+  font-family: var(--default-font);
+  font-weight: 300;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  font-size: var(--default-desktop-h2-font-size);
+  font-family: var(--default-font);
+  font-weight: 200;
+  margin: 0;
+  padding: 20px;
+}
+
+h3 {
+  font-size: var(--default-desktop-h3-font-size);
+  font-family: var(--default-font);
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: var(--default-desktop-h4-font-size);
+  font-family: var(--default-font);
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: var(--default-desktop-p-font-size);
+  font-family: var(--default-font);
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-size: var(--default-desktop-span-font-size);
+  font-family: var(--default-font);
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
@@ -83,13 +142,23 @@ header {
   color: var(--default-color); /* Use the default color for text */
 }
 
-footer {
-  text-align: center;
-  margin: 20px 0;
-  color: var(--default-color); /* Default color for footer text */
-}
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--default-mobile-h1-font-size);
+  }
+  
+  h2 {
+    font-size: var(--default-mobile-h2-font-size);
+  }
+  
+  p {
+    font-size: var(--default-mobile-p-font-size);
+  }
 
-@media (max-width: 768px) { /* Adjust the max-width as needed for your design */
+  span {
+    font-size: var(--default-mobile-span-font-size);
+  }
+
   .section {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center align the content */

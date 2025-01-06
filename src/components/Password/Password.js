@@ -96,7 +96,7 @@ const styles = {
   header: {
     color: '#940306',
     marginBottom: '20px',
-    fontFamily: "'Playfair Display', serif", // Elegant font for the wedding theme
+    // fontFamily: "'Playfair Display', serif", // Elegant font for the wedding theme
     fontSize: '24px',
   },
   error: {

@@ -1,27 +1,25 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .timeline-container {
   background-color: var(--secondary-color);
+  width: 100%;
 }
 
 .timeline {
   position: relative;
   margin: 0 auto;
-  /* padding: 20px; */
   width: 100%;
   height: 100%;
 }
 
 .timeline-title {
   color: var(--default-color);
-  width: 100%;
+  width: 90%;
   text-align: center;
-  font-size: 50px;
-  font-family: var(--default-font);
+  padding: 20px;
 }
 
 .timeline-item {
@@ -52,25 +50,12 @@ body {
 }
 
 .timeline-item .text-container {
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
-  align-items: center;
   width: 80%;
   color: var(--default-color);
-}
-
-.timeline-item h3 {
-  margin: 0 0 10px;
-  font-size: 30px;
-}
-
-.timeline-item h2 {
-  margin: 0 0 20px;
-  font-size: 20px;
-}
-
-.timeline-item p {
-  font-size: 20px;
-  margin: 0;
+  gap: 15px;
 }
 
 /* Add a vertical line */
@@ -86,21 +71,18 @@ body {
   display: none;
 }
 
-
-/* For larger screens, align items to the sides */
 @media (min-width: 768px) {
   .timeline-item {
     flex-direction: row;
     align-items: center;
-    text-align: left;
     width: 100%;
   }
 
   .timeline-item .text-container {
     max-width: 800px;
-    align-items: center;
     width: 40%;
     color: var(--default-color);
+    text-align: left;
   }
 
   .timeline-item .image-container {
@@ -110,10 +92,6 @@ body {
 
   .timeline-item:nth-child(even) {
     flex-direction: row-reverse;
-  }
-
-  .timeline-item .text-container {
-    text-align: left;
   }
 
   .timeline-item:nth-child(even) .text-container {
