@@ -2,29 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .carousel-container {
-  position: relative;
-  width: 100%;
-  margin-bottom: -1%;
-  height: 100vh; /* Full height for the viewport */
-  overflow: hidden; /* Hide the overflowing images */
-  /* background-color: black; Optional: Background to ensure visibility */
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .carousel {
-  display: flex;
-  width: fit-content; /* Ensures the line of images adjusts dynamically */
-  animation: scroll 40s linear infinite; /* Smooth infinite scroll */
+  display: inline-flex;
+  animation: scroll-back-and-forth 40s linear infinite;
 }
 
-.carousel-image {
-  flex-shrink: 0; /* Prevent shrinking */
-  width: 100vw; /* Each image takes up 100% of the viewport width */
-  height: 100vh; /* Full viewport height */
-}
 .carousel-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100vw;
+  height: auto;
 }
 
 .carousel-mask {
@@ -56,18 +46,23 @@
  font-size: 40px;
 }
 
-.line {
+.carousel-line {
   border-bottom: 1px solid var(--secondary-color);
+  width: 100%;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0); /* Start at the first image */
+@keyframes scroll-back-and-forth {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%); /* Slide to the left by one image width */
+  50% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
+
 
 @media (max-width: 768px) {
   .carousel-text {

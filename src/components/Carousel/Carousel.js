@@ -1,24 +1,21 @@
 import React from 'react';
 import './Carousel.css';
+import img3 from '../../assets/photos/Us/IMG_5276.png';
+import img1 from '../../assets/photos/Us/IMG_2249.png';
 
-const Carousel = ({images}) => {
-
+const Carousel = () => {
   return (
     <div className="carousel-container">
       <div className="carousel">
-        {/* Duplicate images for infinite scrolling */}
-        {[...images, ...images].map((src, index) => (
-          <div key={index} className="carousel-image">
-            <img src={src} alt={`carousel ${index}`} className="carousel-img" />
-          </div>
-        ))}
+            <img src={img1} alt={`carousel 1`} className="carousel-img" />
+            <img src={img3} alt={`carousel 3`} className="carousel-img" />
           <div className='carousel-mask'/>
       </div>
       <div className='text-container'>
       <div className="carousel-text">
           <h1>Izabela & Jakub</h1>
           <p>SAVE THE DATE</p>
-          <div className='line'/>
+          <div className='carousel-line'/>
           <h2>Środa, 18 czerwca 2025</h2>
         </div>
       </div>

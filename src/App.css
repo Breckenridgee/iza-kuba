@@ -1,22 +1,11 @@
-/* Add this to your CSS file */
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
-
-/* Define a global CSS variable for the color */
 
 :root {
   --default-color: #4d0013;
   --secondary-color: #F7E7CE;
   --default-font: 'Dancing Script', cursive; 
-  /* --default-font: 'Marck+Script', cursive;  */
-    /* --default-font: 'Alex Brush', cursive;  */
-  /* --default-font: 'Great Vibes', cursive;  */
-  /* --default-font: 'Monte Carlo', cursive;  */
-  /* --default-font-p: 'Poppins', cursive; */
-  --default-font-p: 'Lora', serif; 
-  /* --default-font: 'Kalam', cursive;  */
-  /* --default-font: 'Pacifico', cursive;  */
-  /* --default-font: 'Allura', cursive;  */
+  --secondary-font: 'Lora', serif; 
   --default-desktop-h1-font-size: 70px;
   --default-mobile-h1-font-size: 35px;
   --default-desktop-h2-font-size: 50px;
@@ -37,6 +26,7 @@ body {
   font-family: var(--default-font);
   font-style: cursive;
   text-align: center;
+  max-width: 1400px;
 }
 
 h1 {
@@ -73,7 +63,7 @@ h4 {
 
 p {
   font-size: var(--default-desktop-p-font-size);
-  font-family: var(--default-font-p);
+  font-family: var(--secondary-font);
   font-weight: 100;
   font-style: italic;
   margin: 0;
@@ -82,7 +72,7 @@ p {
 
 span {
   font-size: var(--default-desktop-span-font-size);
-  font-family: var(--default-font-p);
+  font-family: var(--secondary-font);
   font-weight: 100;
   margin: 0;
   padding: 0;
@@ -111,7 +101,7 @@ span {
 }
 
 .App-link {
-  color: var(--default-color); /* Use the default color for links */
+  color: var(--default-color);
 }
 
 @keyframes App-logo-spin {
@@ -142,15 +132,15 @@ header {
 }
 
 .image {
-  width: 50%; /* Możesz dostosować szerokość */
-  max-height: 700px; /* Dostosuj wysokość obrazków */
-  object-fit: cover; /* Utrzymuje proporcje obrazu */
+  width: 50%;
+  max-height: 700px;
+  object-fit: cover;
 }
 
 .text {
-  width: 50%; /* Możesz dostosować szerokość */
-  padding: 20px; /* Dostosuj padding */
-  color: var(--default-color); /* Use the default color for text */
+  width: 50%;
+  padding: 20px;
+  color: var(--default-color);
 }
 
 @media (max-width: 768px) {
@@ -171,23 +161,23 @@ header {
   }
 
   .section {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align the content */
-    text-align: center; /* Center text for mobile */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .content {
-    flex-direction: column; /* Ensure that content stacks vertically */
-    width: 100%; /* Use full width on mobile */
+    flex-direction: column;
+    width: 100%;
   }
 
   .image {
-    width: 100%; /* Make image take full width */
-    max-height: 300px; /* Adjust the height as needed for mobile */
+    width: 100%;
+    max-height: 300px;
   }
 
   .text {
-    width: 100%; /* Ensure text also uses full width */
-    padding: 10px; /* Adjust padding for mobile */
+    width: 100%;
+    padding: 10px;
   }
 }

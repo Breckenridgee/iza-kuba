@@ -7,9 +7,6 @@ import Time from '../Time/Time.js';
 import Wedding from '../Wedding/Wedding';
 import Fotter from '../Footer/Footer';
 import Image from '../Image/Image';
-import img3 from '../../assets/photos/Us/IMG_5276.png';
-import img4 from '../../assets/photos/Us/IMG_5662.png';
-import img1 from '../../assets/photos/Us/IMG_5662.png';
 import img5 from '../../assets/photos/Us/IMG_2303.png';
 import img6 from '../../assets/photos/Us/IMG_8217.png';
 import tinderPic from '../../assets/photos/Us/IMG_3885.png';
@@ -17,7 +14,7 @@ import meetPic from '../../assets/photos/Us/IMG_2347.png';
 import familyPic from '../../assets/photos/Us/IMG_3934.png';
 import engagementPic from '../../assets/photos/Us/engagementPic.png';
 
-const images = [img1, img3, img4];
+// const images = [img1, img3];
 const events = [
   {
     image: meetPic,
@@ -48,8 +45,7 @@ const events = [
 const App = () => {
   return (
     <div style={styles.container}>
-      {/* <Banner/> */}
-       <Carousel images={images}/>
+       <Carousel/>
        <Counter />
        <Image src={img5} alt="Como 2023" />
        <Time events={events} />

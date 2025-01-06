@@ -23,7 +23,8 @@ body {
   color: var(--secondary-color);
   width: 100%;
 }
-.line {
+
+.counter-line {
   border-bottom: 1px solid var(--secondary-color);
   width: 60%;
 }
