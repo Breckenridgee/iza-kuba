@@ -3,10 +3,20 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 /* Define a global CSS variable for the color */
+
 :root {
   --default-color: #4d0013;
   --secondary-color: #F7E7CE;
-  --default-font: 'Poppins', cursive;
+  --default-font: 'Dancing Script', cursive; 
+  /* --default-font: 'Marck+Script', cursive;  */
+    /* --default-font: 'Alex Brush', cursive;  */
+  /* --default-font: 'Great Vibes', cursive;  */
+  /* --default-font: 'Monte Carlo', cursive;  */
+  /* --default-font-p: 'Poppins', cursive; */
+  --default-font-p: 'Lora', serif; 
+  /* --default-font: 'Kalam', cursive;  */
+  /* --default-font: 'Pacifico', cursive;  */
+  /* --default-font: 'Allura', cursive;  */
   --default-desktop-h1-font-size: 70px;
   --default-mobile-h1-font-size: 35px;
   --default-desktop-h2-font-size: 50px;
@@ -15,8 +25,8 @@
   --default-mobile-h3-font-size: 20px;
   --default-desktop-h4-font-size: 30px;
   --default-mobile-h4-font-size: 15px;
-  --default-desktop-p-font-size: 25px;
-  --default-mobile-p-font-size: 12.5px;
+  --default-desktop-p-font-size: 20px;
+  --default-mobile-p-font-size: 10px;
   --default-desktop-span-font-size: 20px;
   --default-mobile-span-font-size: 10px;
 }
@@ -63,15 +73,16 @@ h4 {
 
 p {
   font-size: var(--default-desktop-p-font-size);
-  font-family: var(--default-font);
+  font-family: var(--default-font-p);
   font-weight: 100;
+  font-style: italic;
   margin: 0;
   padding: 0;
 }
 
 span {
   font-size: var(--default-desktop-span-font-size);
-  font-family: var(--default-font);
+  font-family: var(--default-font-p);
   font-weight: 100;
   margin: 0;
   padding: 0;

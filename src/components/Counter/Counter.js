@@ -33,6 +33,7 @@ const Counter = () => {
   return (
     <div className="counter-container">
       <h2>Widzimy się juz za</h2>
+      <div className='line'/>
       <div className="counter-container2">
       <div>
         <h1>{timeLeft.days}</h1>

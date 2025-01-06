@@ -12,8 +12,8 @@ const Time = ({ events }) => {
             <img src={event.image} alt={event.title} className="image" />
           </div>
           <div className="text-container">
-            <h4>{event.title}</h4>
-            <p>{event.date}</p>
+            <h3>{event.title}</h3>
+            <h4>{event.date}</h4>
             <p>{event.description}</p>
           </div>
         </div>

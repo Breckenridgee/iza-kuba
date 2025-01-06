@@ -14,12 +14,14 @@ const Carousel = ({images}) => {
         ))}
           <div className='carousel-mask'/>
       </div>
+      <div className='text-container'>
       <div className="carousel-text">
           <h1>Izabela & Jakub</h1>
-          <h2>POBIERAMY SIĘ!</h2>
-          <p>______________________________</p>
+          <p>SAVE THE DATE</p>
+          <div className='line'/>
           <h2>Środa, 18 czerwca 2025</h2>
         </div>
+      </div>
     </div>
   );
 };
