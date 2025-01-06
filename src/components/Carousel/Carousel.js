@@ -15,8 +15,10 @@ const Carousel = ({images}) => {
           <div className='carousel-mask'/>
       </div>
       <div className="carousel-text">
-          <h1>Będzie ślub!</h1>
-          <h2>18/06/2025</h2>
+          <h1>Izabela & Jakub</h1>
+          <h2>POBIERAMY SIĘ!</h2>
+          <p>______________________________</p>
+          <h2>Środa, 18 czerwca 2025</h2>
         </div>
     </div>
   );

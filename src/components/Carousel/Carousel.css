@@ -13,7 +13,7 @@
 .carousel {
   display: flex;
   width: fit-content; /* Ensures the line of images adjusts dynamically */
-  animation: scroll 100s linear infinite; /* Smooth infinite scroll */
+  animation: scroll 40s linear infinite; /* Smooth infinite scroll */
 }
 
 .carousel-image {

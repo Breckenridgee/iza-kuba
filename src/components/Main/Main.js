@@ -22,7 +22,7 @@ const events = [
   {
     image: meetPic,
     title: "Poznaliśmy się",
-    date: "Środa 26 padziernika 2021",
+    date: "Wrocław, Środa 26 października 2021",
     description: "Cała nasza przygoda zaczęła się dwóch swipów w prawo",
   },
   {
