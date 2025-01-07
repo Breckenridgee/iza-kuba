@@ -4,12 +4,6 @@
   justify-items: center;
 }
 
-/* h1 {
-  padding: 20px;
-  color: var(--secondary-color);
-  text-align: center;
-} */
-
 .wedding-card-conteiner {
   display: flex;
   flex-direction: row;
@@ -33,52 +27,85 @@
   height: 500px;
 }
 
+.wedding-card-text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
 .wedding-card img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
-.wedding-card h2 {
-  /* font-size: var(--default-desktop-h2-font-size);
-  font-family: var(--default-font); */
+.wedding-card h2, p, span {
+  color: var(--default-color);
+}
+.wedding-button h4, p {
   color: var(--default-color);
 }
 
-.wedding-card p {
-  /* font-size: var(--default-desktop-p-font-size);
-  font-family: var(--default-font); */
-  color: var(--default-color);
-  text-align: center;
+.wedding-card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.button {
-  text-decoration: none; 
-  padding: 10px 10px; 
-  border: 1px solid var(--secondary-color);
-  display: inline-block;
-  border-radius: 5px;
-  color: var(--secondary-color);
-  font-size: 1.5rem;
-  /* font-family: var(--default-font); */
-  margin: 20px;
+.wedding-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  align-content: center;
+}
+
+.wedding-button-container img {
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.wedding-button {
   text-align: center;
-  cursor: pointer;
+  margin: 20px;
+}
+
+.wedding-button .button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  padding: 10px 10px;
+  border-radius: 5px; 
+  font-size: 16px;
+  font-weight: bold; 
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: var(--secondary-color);
-  color: var(--default-color);
-  border: 1px solid var(--default-color);
+  background-color: var(--default-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.wedding-button .button p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.wedding-button .button:hover h4 {
+  color: var(--secondary-color);
+}
+
+.wedding-button .button:hover p {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
-  /* h1 {
-    font-size: var(--lt-mobile-h1-font-size);
-  } */
-
   .wedding-card-conteiner {
     flex-direction: column;
   }

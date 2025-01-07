@@ -17,9 +17,8 @@ body {
 
 .timeline-title {
   color: var(--default-color);
-  width: 90%;
+  width: 100%;
   text-align: center;
-  padding: 20px;
 }
 
 .timeline-item {
@@ -27,38 +26,42 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%;
   justify-content: space-around;
-  gap: 50px;
-  margin-bottom: 50px;
+  gap: 0px;
+  margin-bottom: 70px;
 }
 
 .timeline-item .image-container {
-  width: 200px;
-  height: 200px;
-  border: 2px solid var(--default-color); /* Larger border */
+  height: 70vw;
+  width: 70vw;
   display: flex;
   border-radius: 50%;
   align-items: center;
-  overflow: hidden; /* Ensure content does not overflow the circle */
+  overflow: hidden;
+  margin: 0;
 }
 
 .timeline-item .image {
-  width: 100%; /* Image size is slightly smaller than the container */
-  height: 100%; /* Image size is slightly smaller than the container */
-  object-fit: cover; /* Make sure the image maintains its aspect ratio */
+  object-fit: cover;
+  height: 80vw;
+  width: 80vw;
 }
 
-.timeline-item .text-container {
+.time-text-container {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  text-align: center;
+  max-width: 400px;
   width: 80%;
   color: var(--default-color);
-  gap: 15px;
+  gap: 20px;
 }
 
-/* Add a vertical line */
+.time-text-date {
+  font-family: var(--default-font);
+  font-size: 20px;
+}
+
 .timeline::before {
   content: '';
   position: absolute;
@@ -71,11 +74,40 @@ body {
   display: none;
 }
 
+.point {
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--default-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.point:nth-child(1) {
+  top: 10.5%;
+}
+
+.point:nth-child(2) {
+  top: 36.8%;
+}
+
+.point:nth-child(3) {
+  top: 63.3%;
+}
+
+.point:nth-child(4) {
+  top: 89.5%;
+}
+
 @media (min-width: 768px) {
   .timeline-item {
     flex-direction: row;
     align-items: center;
     width: 100%;
+    margin-bottom: 100px;
+    gap: 20px;
   }
 
   .timeline-item .text-container {
@@ -84,10 +116,25 @@ body {
     color: var(--default-color);
     text-align: left;
   }
+  .time-text-container {
+    width: 30%;
+    text-align: left;
+  }
 
   .timeline-item .image-container {
     width: 400px;
     height: 400px;
+    max-height: 400px;
+    max-width: 400px;
+  }
+
+  .timeline-item .image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .time-text-date{
+    font-size: 25px;
   }
 
   .timeline-item:nth-child(even) {
@@ -98,6 +145,9 @@ body {
     text-align: right;
   }
   .timeline::before {
+    display: block;
+  }
+  .point {
     display: block;
   }
 }

@@ -9,15 +9,15 @@
   --default-desktop-h1-font-size: 70px;
   --default-mobile-h1-font-size: 35px;
   --default-desktop-h2-font-size: 50px;
-  --default-mobile-h2-font-size: 25px;
+  --default-mobile-h2-font-size: 30px;
   --default-desktop-h3-font-size: 40px;
-  --default-mobile-h3-font-size: 20px;
+  --default-mobile-h3-font-size: 25px;
   --default-desktop-h4-font-size: 30px;
-  --default-mobile-h4-font-size: 15px;
+  --default-mobile-h4-font-size: 20px;
   --default-desktop-p-font-size: 20px;
-  --default-mobile-p-font-size: 10px;
+  --default-mobile-p-font-size: 15px;
   --default-desktop-span-font-size: 20px;
-  --default-mobile-span-font-size: 10px;
+  --default-mobile-span-font-size: 15px;
 }
 
 body {
@@ -34,7 +34,7 @@ h1 {
   font-family: var(--default-font);
   font-weight: 300;
   margin: 0;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 h2 {
@@ -42,7 +42,7 @@ h2 {
   font-family: var(--default-font);
   font-weight: 200;
   margin: 0;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 h3 {
