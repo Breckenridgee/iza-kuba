@@ -41,10 +41,14 @@
   border-radius: 5%;
 }
 
-.wedding-card h2, p, span {
+.wedding-card h2,
+.wedding-card p,
+.wedding-card span {
   color: var(--default-color);
 }
-.wedding-button h4, p {
+
+.wedding-button h4,
+.wedding-button p {
   color: var(--default-color);
 }
 
@@ -97,10 +101,7 @@
   padding: 5px 0;
 }
 
-.wedding-button .button:hover h4 {
-  color: var(--secondary-color);
-}
-
+.wedding-button .button:hover h4,
 .wedding-button .button:hover p {
   color: var(--secondary-color);
 }
