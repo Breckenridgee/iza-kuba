@@ -16,6 +16,7 @@
 .carousel-img {
   width: 100vw;
   height: auto;
+  object-fit: cover; 
 }
 
 .carousel-mask {
@@ -66,6 +67,12 @@
 
 
 @media (max-width: 768px) {
+  .carousel-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+  }
+
   .carousel-text {
     padding: 20px;
   }

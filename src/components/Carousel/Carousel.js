@@ -1,7 +1,7 @@
 import React from 'react';
 import './Carousel.css';
-import img3 from '../../assets/photos/Us/IMG_5276.png';
-import img1 from '../../assets/photos/Us/IMG_2249.png';
+import img3 from '../../assets/photos/Us/032-I&K-4N6A6131.jpg';
+import img1 from '../../assets/photos/Us/147-I&K-4N6A7463.jpg';
 
 const Carousel = () => {
   return (

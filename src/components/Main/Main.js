@@ -7,23 +7,24 @@ import Time from '../Time/Time.js';
 import Wedding from '../Wedding/Wedding';
 import Fotter from '../Footer/Footer';
 import Image from '../Image/Image';
-import img5 from '../../assets/photos/Us/IMG_2303.png';
-import img6 from '../../assets/photos/Us/IMG_8217.png';
-import tinderPic from '../../assets/photos/Us/IMG_3885.png';
-import meetPic from '../../assets/photos/Us/IMG_2347.png';
-import familyPic from '../../assets/photos/Us/IMG_3934.png';
-import engagementPic from '../../assets/photos/Us/engagementPic.png';
+import AboutUs from '../AboutUs/AboutUs';
+import img5 from '../../assets/photos/Us/181-I&K-4N6A7940.jpg';
+import img6 from '../../assets/photos/Us/076-I&K-4N6A6544.jpg';
+import tinderPic from '../../assets/photos/Us/120-I&K-4N6A7056.jpg';
+import meetPic from '../../assets/photos/Us/129-I&K-4N6A7185.jpg';
+import familyPic from '../../assets/photos/Us/IMG_6043.JPEG';
+import engagementPic from '../../assets/photos/Us/engagementPic2.png';
 
 // const images = [img1, img3];
 const events = [
   {
-    image: meetPic,
+    image: tinderPic,
     title: "Poznaliśmy się",
     date: "Wrocław, Środa 26 października 2021",
     description: "Cała nasza przygoda zaczęła się dwóch swipów w prawo",
   },
   {
-    image: tinderPic,
+    image: meetPic,
     title: "Pierwsza randka",
     date: "Wrocław, Piątek 29 października 2021",
     description: "Długo nam nie zajęło zdecydowanie się na pierwsze spotkanie w cztery oczy. Choć nie mieliśmy wtedy duo czasu wiedzieliśmy, że na jednym spotkaniu się nie skończy.",
@@ -51,6 +52,7 @@ const App = () => {
        <Time events={events} />
        <Image src={img6} alt="Italy 2023" />
        <Wedding />
+       <AboutUs />
        <Fotter/>
       {/* <header style={styles.header}>
         <nav style={styles.nav}>
