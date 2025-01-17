@@ -12,10 +12,9 @@ import img5 from '../../assets/photos/Us/181-I&K-4N6A7940.jpg';
 import img6 from '../../assets/photos/Us/076-I&K-4N6A6544.jpg';
 import tinderPic from '../../assets/photos/Us/120-I&K-4N6A7056.jpg';
 import meetPic from '../../assets/photos/Us/129-I&K-4N6A7185.jpg';
-import familyPic from '../../assets/photos/Us/IMG_6043.JPEG';
-import engagementPic from '../../assets/photos/Us/engagementPic2.png';
+import familyPic from '../../assets/photos/Us/cava.png';
+import engagementPic from '../../assets/photos/Us/088-I&K-4N6A6683.jpg';
 
-// const images = [img1, img3];
 const events = [
   {
     image: tinderPic,
