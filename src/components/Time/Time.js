@@ -13,7 +13,7 @@ const Time = ({ events }) => {
       {events.map((event, index) => (
         <div className="timeline-item" key={index}>
           <div className="image-container">
-            <img src={event.image} alt={event.title} className="image" />
+            <img src={event.image} alt={event.title} className="image" loading="lazy"/>
           </div>
           <div className="time-text-container">
             <h2>{event.title}</h2>

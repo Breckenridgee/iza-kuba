@@ -9,12 +9,12 @@ const AboutUs = () => {
       {/* <h1>Zapytaj nas</h1>
       <div class="box"> */}
         <div class="square image-square square1">
-          <img src={Kuba} alt="Kuba" className="image" />
+          <img src={Kuba} alt="Kuba" className="image" loading="lazy"/>
         </div>
 
         <div class="square text-square">
           <h1>Kuba</h1>
-          <a class="phone-link" href="tel:+1234567890">
+          <a class="phone-link" href="tel:+48661939745">
             <svg
               class="phone-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const AboutUs = () => {
 
         <div class="square text-square">
           <h1>Izabela</h1>
-          <a class="phone-link" href="tel:+1234567890">
+          <a class="phone-link" href="tel:+602107091">
             <svg
               class="phone-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const AboutUs = () => {
         </div>
 
         <div class="square image-square square2">
-          <img src={Iza} alt="Iza" className="image" />
+          <img src={Iza} alt="Iza" className="image" loading="lazy"/>
         </div>
       {/* </div> */}
     </div>

@@ -7,8 +7,8 @@ const Carousel = () => {
   return (
     <div className="carousel-container">
       <div className="carousel">
-            <img src={img1} alt={`carousel 1`} className="carousel-img" />
-            <img src={img3} alt={`carousel 3`} className="carousel-img" />
+            <img src={img1} alt={`carousel 1`} className="carousel-img" loading="lazy"/>
+            <img src={img3} alt={`carousel 3`} className="carousel-img" loading="lazy"/>
           <div className='carousel-mask'/>
       </div>
       <div className='text-container'>

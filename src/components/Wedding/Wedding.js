@@ -11,7 +11,7 @@ const Wedding = () => {
       <h2>Kolejny krok zaplanowaliśmy w wyjątkowym miejscu..</h2>
       <div className="wedding-card-conteiner">
         <div className="wedding-card">
-          <img alt="Ślub plenerowy" src={slub} />
+          <img alt="Ślub plenerowy" src={slub} loading="lazy"/>
           <div className="wedding-card-text">
             <h2>Ślub</h2>
             <p>Na ceremonię zapraszamy was do ogrodu Hotelu Dębowy</p>
@@ -20,7 +20,7 @@ const Wedding = () => {
           </div>
         </div>
         <div className="wedding-card">
-          <img alt="Wesele" src={wesele} />
+          <img alt="Wesele" src={wesele} loading="lazy"/>
           <div className="wedding-card-text">
             <h2>Wesele</h2>
             <p>Cały wieczór bawimy się na sali dębowej dostłownie 50 kroków od miejsca ceremonii</p>
@@ -28,7 +28,7 @@ const Wedding = () => {
           </div>
         </div>
         <div className="wedding-card">
-          <img alt="Poprawiny" src={poprawiny} />
+          <img alt="Poprawiny" src={poprawiny} loading="lazy"/>
           <div className="wedding-card-text">
             <h2>Poprawiny</h2>
             <p>Następnego dnia zapraszamy na poprawinowego grilla w tym samym ogrodzie.</p>
@@ -42,7 +42,7 @@ const Wedding = () => {
           rel="noopener noreferrer"
           className="button">
           <div className="wedding-button-container">
-            <img src={google} alt="Google Maps" />
+            <img src={google} alt="Google Maps" loading="lazy"/>
             <div className="wedding-button-text-container">
               <h4>Zabierz mnie tam</h4>
               <p>Janusza Korczaka 1, 58-260 Bielawa</p>
