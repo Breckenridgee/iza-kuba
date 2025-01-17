@@ -33,24 +33,24 @@ const Counter = () => {
   return (
     <div className="counter-container">
       <h3>Widzimy się juz za</h3>
-      <div className='counter-line'/>
-      <div className="counter-container2">
-      <div>
-        <h2>{timeLeft.days}</h2>
-        <span>Dni</span>
-      </div>
-      <div>
-        <h2>{timeLeft.hours}</h2>
-        <span>Godzin</span>
-      </div>
-      <div >
-        <h2>{timeLeft.minutes}</h2>
-        <span>Minut</span>
-      </div>
-      <div>
-        <h2>{timeLeft.seconds}</h2>
-        <span>Sekund</span>
-      </div>
+      <div className='counter-line' />
+      <div className="counter-section">
+        <div className="counter-section-item">
+          <h2>{timeLeft.days}</h2>
+          <span>Dni</span>
+        </div>
+        <div className="counter-section-item">
+          <h2>{timeLeft.hours}</h2>
+          <span>Godzin</span>
+        </div>
+        <div className="counter-section-item">
+          <h2>{timeLeft.minutes}</h2>
+          <span>Minut</span>
+        </div>
+        <div className="counter-section-item">
+          <h2>{timeLeft.seconds}</h2>
+          <span>Sekund</span>
+        </div>
       </div>
     </div>
   );

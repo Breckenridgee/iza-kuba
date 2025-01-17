@@ -13,23 +13,37 @@ body {
   padding: 130px 0;
 }
 
-.counter-container2 {
+.counter-container h2 {
+  padding: 0;
+}
+
+.counter-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 5%;
   background-color: var(--default-color);
   color: var(--secondary-color);
   width: 100%;
 }
 
+.counter-section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .counter-line {
   border-bottom: 1px solid var(--secondary-color);
-  width: 60%;
+  width: 70%;
 }
 
 @media (max-width: 768px) {
+
+
   .counter-container {
     width: 100%;
     padding: 50px 0;
