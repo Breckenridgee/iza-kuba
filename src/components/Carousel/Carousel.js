@@ -2,7 +2,7 @@ import React from 'react';
 import './Carousel.css';
 import img2 from '../../assets/photos/Us/032-I&K-4N6A6131.jpg';
 import img1 from '../../assets/photos/Us/147-I&K-4N6A7463.jpg';
-import img3 from '../../assets/photos/Us/075-I&K-4N6A6539.jpg';
+import img3 from '../../assets/photos/Us/091-I&K-4N6A6730.jpg';
 import img4 from '../../assets/photos/Us/159-I&K-4N6A7640.jpg';
 const Carousel = () => {
   return (

@@ -11,7 +11,7 @@
 
 .carousel {
   display: inline-flex;
-  animation: scroll-back-and-forth 30s linear infinite;
+  animation: scroll-back-and-forth 40s linear infinite;
 }
 
 .carousel-img {
