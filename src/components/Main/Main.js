@@ -15,6 +15,7 @@ import tinderPic from '../../assets/photos/Us/120-I&K-4N6A7056.jpg';
 import meetPic from '../../assets/photos/Us/129-I&K-4N6A7185.jpg';
 import familyPic from '../../assets/photos/Us/cava.png';
 import engagementPic from '../../assets/photos/Us/144-I&K-4N6A7428.jpg';
+import travelPic from '../../assets/photos/Us/106-I&K-4N6A6880.jpg';
 import "./Main.css";
 
 const events = [
@@ -22,14 +23,21 @@ const events = [
     image: tinderPic,
     title: "Poznaliśmy się",
     date: "Wrocław, Środa 26 października 2021",
-    description: "Cała nasza przygoda zaczęła się dwóch swipów w prawo",
+    description: "Cała nasza przygoda zaczęła się dwóch swipów w prawo..",
     styles: {objectPosition: 'center'}
   },
   {
     image: meetPic,
     title: "Pierwsza randka",
     date: "Wrocław, Piątek 29 października 2021",
-    description: "Długo nam nie zajęło zdecydowanie się na pierwsze spotkanie w cztery oczy. Choć nie mieliśmy wtedy duo czasu wiedzieliśmy, że na jednym spotkaniu się nie skończy.",
+    description: "Długo nam nie zajęło zdecydowanie się na pierwsze spotkanie w cztery oczy. Choć nie mieliśmy wtedy dużo czasu wiedzieliśmy, że na jednym spotkaniu się nie skończy.",
+    styles: {objectPosition: 'center'}
+  },
+  {
+    image: travelPic,
+    title: "Pierwsza podróż",
+    date: "United States, Maj 2022",
+    description: "Pierwsza podróż, pierwsze wspomnienia. Wracamy z USA jako para, która wie, że chce spędzić życie podróźując razem.",
     styles: {objectPosition: 'center'}
   },
   {
@@ -43,7 +51,7 @@ const events = [
     image: engagementPic,
     title: "Zaręczyny",
     date: "Cypr, Niedziela 19 listopada 2023",
-    description: "I kiedy już myśleliśmy, że nic nas nie zaskoczy, Kuba postanowił zmienić nasze kolejne wspólne wakacje w nowy początek naszego życia",
+    description: "Kolejna podróż, kolejne wspomnienia. Jedziemy na klify obejrzeć kolejny wspólny zachód słońca. Wracamy już jako narzeczeni.",
     styles: {objectPosition: "top"}
   },
 ];
@@ -57,7 +65,7 @@ const App = () => {
        <Time events={events} />
        <Image src={img2} alt="Photo 2" objectPosition="center"/>
        <Wedding />
-       <Image src={img3} alt="Photo 3" objectPosition="bottom" maxHeight="400px"/>
+       <Image src={img3} alt="Photo 3" objectPosition="bottom" maxHeight="300px"/>
        <AboutUs />
        {/* <ImageUpload /> */}
        <Fotter/>
