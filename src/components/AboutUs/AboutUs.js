@@ -5,9 +5,10 @@ import Iza from '../../assets/photos/Us/101-I&K-4N6A6838.jpg';
 
 const AboutUs = () => {
   return (
-    <div class="about-us-container">
+    <div class="about-us-wrapper">
+      <div class="about-us-container">
         <div class="square image-square square1">
-          <img src={Kuba} alt="Kuba" className="image" loading="lazy"/>
+          <img src={Kuba} alt="Kuba" className="image" loading="lazy" />
         </div>
 
         <div class="square text-square">
@@ -38,8 +39,9 @@ const AboutUs = () => {
         </div>
 
         <div class="square image-square square2">
-          <img src={Iza} alt="Iza" className="image" loading="lazy"/>
+          <img src={Iza} alt="Iza" className="image" loading="lazy" />
         </div>
+      </div>
     </div>
   );
 };
