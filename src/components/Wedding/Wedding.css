@@ -2,6 +2,12 @@
   width: 100%;
   background-color: var(--default-color);
   justify-items: center;
+  padding: 50px 0;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
 .wedding-card-conteiner {
@@ -10,7 +16,6 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
   width: 90%;
 }
 
@@ -67,16 +72,24 @@
   width: 100%;
 }
 
-.wedding-button-container img {
+/* .wedding-button-container img {
   width: 80px;
   height: 80px;
   padding: 0;
   margin: 0;
-}
+} */
 
 .wedding-button {
   text-align: center;
   margin: 20px;
+}
+
+.wedding-button-container {
+  color: var(--default-color);
+}
+
+.wedding-button-container:hover {
+  color: var(--secondary-color);
 }
 
 .wedding-button .button {
@@ -104,6 +117,10 @@
 .wedding-button .button:hover h4,
 .wedding-button .button:hover p {
   color: var(--secondary-color);
+}
+
+.google-maps-icon {
+  width: 50px;
 }
 
 @media (max-width: 768px) {

@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { storage } from "./firebase";
 import Swal from 'sweetalert2';
+import "./ImageUpload.css";
 
 function ImageUpload() {
   const [images, setImages] = useState([]);

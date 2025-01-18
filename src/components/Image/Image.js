@@ -1,11 +1,10 @@
 import React from "react";
 import "./Image.css";
 
-const Image = (image) => {
-  console.log(image);
+const Image = ({ src, alt, objectPosition }) => {
   return (
     <div className="image-container">
-      <img src={image.src} alt={image.alt} className="image" loading="lazy"/>
+      <img src={src} alt={alt} className="image" loading="lazy" style={{ objectPosition }}/>
     </div>
   );
 };

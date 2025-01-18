@@ -3,6 +3,7 @@
 
 .carousel-container {
   width: 100vw;
+  max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: -1%;
@@ -10,13 +11,13 @@
 
 .carousel {
   display: inline-flex;
-  animation: scroll-back-and-forth 20s linear infinite;
+  animation: scroll-back-and-forth 30s linear infinite;
 }
 
 .carousel-img {
   width: 100vw;
-  height: auto;
-  object-fit: cover; 
+  height: 100vh;
+  object-fit: cover;
 }
 
 .carousel-mask {
@@ -58,7 +59,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-100vw);
+    transform: translateX(-300vw);
   }
   100% {
     transform: translateX(0);
