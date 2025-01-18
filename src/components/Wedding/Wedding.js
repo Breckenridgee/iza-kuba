@@ -1,7 +1,7 @@
 import React from "react";
 import "./Wedding.css";
-import slub from '../../assets/photos/Us/slub.png';
-import wesele from '../../assets/photos/Us/wesele.png';
+import slub from '../../assets/photos/Us/slub2.png';
+import wesele from '../../assets/photos/Us/wesele3.png';
 import poprawiny from '../../assets/photos/Us/poprawiny.png';
 const Wedding = () => {
   return (
