@@ -47,7 +47,7 @@
   flex-direction: column;
   text-align: center;
   max-width: 400px;
-  width: 80%;
+  width: 100%;
   color: var(--default-color);
   gap: 20px;
 }
@@ -112,15 +112,13 @@
     text-align: left;
   }
   .time-text-container {
-    width: 30%;
+    width: 40%;
     text-align: left;
   }
 
   .timeline-item .image-container {
-    width: 400px;
-    height: 400px;
-    max-height: 400px;
-    max-width: 400px;
+    width: 30vw;
+    height: 30vw;
   }
 
   .timeline-item .image {

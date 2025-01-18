@@ -14,9 +14,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
-  width: 90%;
+  margin: 0 100px;
 }
 
 .wedding-card {
@@ -24,44 +24,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  height: 700px;
+  width: 30%;
   background-color: var(--secondary-color);
   border-radius: 10px;
-  width: 30%;
-  height: 500px;
+  overflow: hidden;
+  justify-content: space-between;
+  color: var(--default-color);
 }
 
-.wedding-card-text {
+.card-image {
   height: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: relative;
+  padding: 20px;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-footer {
+  height: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
 }
 
 .wedding-card img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 5%;
-}
-
-.wedding-card h2,
-.wedding-card p,
-.wedding-card span {
-  color: var(--default-color);
-}
-
-.wedding-button h4,
-.wedding-button p {
-  color: var(--default-color);
-}
-
-.wedding-card span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .wedding-button-container {
@@ -71,13 +66,6 @@
   justify-content: center;
   width: 100%;
 }
-
-/* .wedding-button-container img {
-  width: 80px;
-  height: 80px;
-  padding: 0;
-  margin: 0;
-} */
 
 .wedding-button {
   text-align: center;
@@ -123,18 +111,33 @@
   width: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .wedding-card img {
+    width: 70vw;
+    height: 70vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .card-image {
+    height: 60%;
+  }
+
+  .card-footer {
+    height: 80px;
+  }
+
   .wedding-card-conteiner {
     flex-direction: column;
+    margin: 0;
   }
 
   .wedding-card {
     width: 80%;
+    height: 600px;
   }
-
   .button {
     width: 80%;
     font-size: 1rem;
-
   }
 }

@@ -9,29 +9,30 @@ const Wedding = () => {
       <h2>Kolejny krok zaplanowaliśmy w wyjątkowym miejscu..</h2>
       <div className="wedding-card-conteiner">
         <div className="wedding-card">
-          <img alt="Ślub plenerowy" src={slub} loading="lazy" />
-          <div className="wedding-card-text">
+          <div class="card-image"><img alt="Ślub plenerowy" src={slub} loading="lazy" /></div>
+          <div className="card-content">
             <h2>Ślub</h2>
             <p>Na ceremonię zapraszamy was do ogrodu Hotelu Dębowy</p>
             <p>16:30</p>
-            <span>Środa, 18 czerwca 2025</span>
           </div>
+          <div class="card-footer"><span>Środa, 18 czerwca 2025</span></div>
         </div>
         <div className="wedding-card">
-          <img alt="Wesele" src={wesele} loading="lazy" />
-          <div className="wedding-card-text">
+          <div class="card-image"><img alt="Wesele" src={wesele} loading="lazy" /></div>
+          <div className="card-content">
             <h2>Wesele</h2>
             <p>Cały wieczór bawimy się na sali dębowej dostłownie 50 kroków od miejsca ceremonii</p>
-            <span>Środa, 18 czerwca 2025</span>
           </div>
+          <div class="card-footer"><span>Środa, 18 czerwca 2025</span></div>
         </div>
         <div className="wedding-card">
-          <img alt="Poprawiny" src={poprawiny} loading="lazy" />
-          <div className="wedding-card-text">
+          <div class="card-image">          <img alt="Poprawiny" src={poprawiny} loading="lazy" /></div>
+          <div className="card-content">
             <h2>Poprawiny</h2>
             <p>Następnego dnia zapraszamy na poprawinowego grilla w tym samym ogrodzie.</p>
-            <span>Czwartek, 19 czerwca 2025</span>
+
           </div>
+          <div class="card-footer"><span>Czwartek, 19 czerwca 2025</span></div>
         </div>
       </div>
       <div className="wedding-button">

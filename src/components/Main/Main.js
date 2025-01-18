@@ -57,7 +57,7 @@ const App = () => {
        <Time events={events} />
        <Image src={img2} alt="Photo 2" objectPosition="center"/>
        <Wedding />
-       <Image src={img3} alt="Photo 3" objectPosition="bottom"/>
+       <Image src={img3} alt="Photo 3" objectPosition="bottom" maxHeight="400px"/>
        <AboutUs />
        {/* <ImageUpload /> */}
        <Fotter/>

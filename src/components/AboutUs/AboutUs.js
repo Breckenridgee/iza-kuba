@@ -5,9 +5,7 @@ import Iza from '../../assets/photos/Us/101-I&K-4N6A6838.jpg';
 
 const AboutUs = () => {
   return (
-    <div class="container">
-      {/* <h1>Zapytaj nas</h1>
-      <div class="box"> */}
+    <div class="about-us-container">
         <div class="square image-square square1">
           <img src={Kuba} alt="Kuba" className="image" loading="lazy"/>
         </div>
@@ -42,7 +40,6 @@ const AboutUs = () => {
         <div class="square image-square square2">
           <img src={Iza} alt="Iza" className="image" loading="lazy"/>
         </div>
-      {/* </div> */}
     </div>
   );
 };

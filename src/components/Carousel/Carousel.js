@@ -10,7 +10,7 @@ const Carousel = () => {
       <div className="carousel">
             <img src={img1} alt={`carousel 1`} className="carousel-img" loading="lazy"/>
             <img src={img2} alt={`carousel 2`} className="carousel-img" loading="lazy"/>
-            <img src={img3} alt={`carousel 3`} className="carousel-img" loading="lazy"/>
+            <img src={img3} alt={`carousel 3`} className="carousel-img" loading="lazy" style={{objectPosition: 'center'}}/>
             <img src={img4} alt={`carousel 4`} className="carousel-img" loading="lazy"/>
           <div className='carousel-mask'/>
       </div>
