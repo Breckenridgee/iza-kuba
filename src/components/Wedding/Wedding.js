@@ -13,7 +13,7 @@ const Wedding = () => {
           <div className="card-content">
             <h2>Ślub</h2>
             <p>Na ceremonię zapraszamy was do ogrodu Hotelu Dębowy</p>
-            <p>Godzina <b>16:30</b></p>
+            <p>Godzina <b>16:00</b></p>
           </div>
           <div class="card-footer"><span>Środa, 18 czerwca 2025</span></div>
         </div>
@@ -26,7 +26,7 @@ const Wedding = () => {
           <div class="card-footer"><span>Środa, 18 czerwca 2025</span></div>
         </div>
         <div className="wedding-card">
-          <div class="card-image">          <img alt="Poprawiny" src={poprawiny} loading="lazy" /></div>
+          <div class="card-image"><img alt="Poprawiny" src={poprawiny} loading="lazy" /></div>
           <div className="card-content">
             <h2>Poprawiny</h2>
             <p>Następnego dnia zapraszamy na poprawinowego grilla w tym samym ogrodzie.</p>
