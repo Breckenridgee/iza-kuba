@@ -29,8 +29,7 @@
   justify-content: space-around;
   gap: 30px;
   min-height: 300px;
-  margin-bottom: 40px;
-  /* padding: 10%; */
+  margin: 40px 0;
 }
 
 .timeline-item .image-container {
@@ -87,19 +86,19 @@
 }
 
 .point:nth-child(1) {
-  top: 10%;
+  top: 8%;
 }
 
 .point:nth-child(2) {
-  top: 30%;
+  top: 28%;
 }
 
 .point:nth-child(3) {
-  top: 50%;
+  top: 48%;
 }
 
 .point:nth-child(4) {
-  top: 70%;
+  top: 68%;
 }
 
 .point:nth-child(5) {
