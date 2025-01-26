@@ -1,8 +1,9 @@
 .wedding-container {
-  width: 100%;
+  width: 100vw;
   background-color: var(--default-color);
   justify-items: center;
   padding: 50px 0;
+  margin: 0 auto;
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 30%;
+  width: 30vw;
   background-color: var(--secondary-color);
   border-radius: 10px;
   overflow: hidden;
