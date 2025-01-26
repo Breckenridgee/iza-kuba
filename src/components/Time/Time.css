@@ -41,7 +41,8 @@
   align-items: center;
   overflow: hidden;
   margin: 0;
-  justify-self: center;
+  padding: 0;
+  text-align: center;
 }
 
 .timeline-item .image {
