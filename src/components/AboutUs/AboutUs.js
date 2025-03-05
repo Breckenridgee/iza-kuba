@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
 import Kuba from '../../assets/photos/Us/063-I&K-4N6A6433.jpg';
-import Iza from '../../assets/photos/Us/101-I&K-4N6A6838.jpg';
 
 const AboutUs = () => {
   return (
@@ -39,7 +38,7 @@ const AboutUs = () => {
         </div>
 
         <div class="square image-square square2">
-          <img src={Iza} alt="Iza" className="image" loading="lazy" />
+          <img src="https://iza-kuba-wedding.com/static/media/101-I&K-4N6A6838.ff78c1ebda5f775ffec5.jpg" alt="Iza" className="image" loading="lazy" />
         </div>
       </div>
     </div>
