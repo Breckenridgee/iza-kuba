@@ -8,14 +8,6 @@ import Wedding from '../Wedding/Wedding';
 import Fotter from '../Footer/Footer';
 import Image from '../Image/Image';
 import AboutUs from '../AboutUs/AboutUs';
-import img1 from '../../assets/photos/Us/181-I&K-4N6A7940.jpg';
-import img2 from '../../assets/photos/Us/076-I&K-4N6A6544.jpg';
-import img3 from '../../assets/photos/Us/115-I&K-4N6A6991.jpg';
-// import tinderPic from '../../assets/photos/Us/120-I&K-4N6A7056.jpg';
-// import meetPic from '../../assets/photos/Us/129-I&K-4N6A7185.jpg';
-// import familyPic from '../../assets/photos/Us/cava.png';
-// import engagementPic from '../../assets/photos/Us/144-I&K-4N6A7428.jpg';
-// import travelPic from '../../assets/photos/Us/106-I&K-4N6A6880.jpg';
 import "./Main.css";
 
 const events = [
@@ -61,11 +53,11 @@ const App = () => {
     <div className="main-container">
        <Carousel/>
        <Counter />
-       <Image src={img1} alt="Photo 1" objectPosition="top"/>
+       <Image src="images/close.jpg" alt="Photo 1" objectPosition="top"/>
        <Time events={events} />
-       <Image src={img2} alt="Photo 2" objectPosition="center"/>
+       <Image src="images/hands.jpg" alt="Photo 2" objectPosition="center"/>
        <Wedding />
-       <Image src={img3} alt="Photo 3" objectPosition="bottom" maxHeight="300px"/>
+       <Image src="images/far.jpg" alt="Photo 3" objectPosition="bottom" maxHeight="300px"/>
        <AboutUs />
        {/* <ImageUpload /> */}
        <Fotter/>

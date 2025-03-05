@@ -1,18 +1,14 @@
 import React from 'react';
 import './Carousel.css';
-import img2 from '../../assets/photos/Us/032-I&K-4N6A6131_mobile.jpg';
-import img1 from '../../assets/photos/Us/147-I&K-4N6A7463_mobile.jpg';
-import img3 from '../../assets/photos/Us/091-I&K-4N6A6730_mobile.jpg';
-import img4 from '../../assets/photos/Us/159-I&K-4N6A7640_mobile.jpg';
 
 const Carousel = () => {
   return (
     <div className="carousel-container">
       <div className="carousel">
-        <img src={img1} alt={`carousel 1`} className="carousel-img" loading="lazy" />
-        <img src={img2} alt={`carousel 2`} className="carousel-img" loading="lazy" />
-        <img src={img3} alt={`carousel 3`} className="carousel-img" loading="lazy" style={{ objectPosition: 'center' }} />
-        <img src={img4} alt={`carousel 4`} className="carousel-img" loading="lazy" />
+        <img src="images/car_1.jpg" alt={`carousel 1`} className="carousel-img" loading="lazy" />
+        <img src="images/car_2.jpg" alt={`carousel 2`} className="carousel-img" loading="lazy" />
+        <img src="images/car_3.jpg" alt={`carousel 3`} className="carousel-img" loading="lazy" style={{ objectPosition: 'center' }} />
+        <img src="images/car_4.jpg" alt={`carousel 4`} className="carousel-img" loading="lazy" />
         <div className='carousel-mask' />
       </div>
       <div className='text-container'>
