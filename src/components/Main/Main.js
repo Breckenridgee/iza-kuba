@@ -23,7 +23,7 @@ const events = [
     image: tinderPic,
     title: "Poznaliśmy się",
     date: "Wrocław, Środa 26 października 2021",
-    description: "Cała nasza przygoda zaczęła się dwóch swipów w prawo..",
+    description: "Cała nasza przygoda zaczęła się od dwóch swipów w prawo..",
     styles: {objectPosition: 'center'}
   },
   {

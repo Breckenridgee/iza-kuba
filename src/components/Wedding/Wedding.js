@@ -12,7 +12,7 @@ const Wedding = () => {
           <div class="card-image"><img alt="Ślub plenerowy" src={slub} loading="lazy" /></div>
           <div className="card-content">
             <h2>Ślub</h2>
-            <p>Na ceremonię zapraszamy was do ogrodu Hotelu Dębowy</p>
+            <p>Na ceremonię zapraszamy Was do ogrodu Hotelu Dębowy</p>
             <p>Godzina <b>16:00</b></p>
           </div>
           <div class="card-footer"><span>Środa, 18 czerwca 2025</span></div>
