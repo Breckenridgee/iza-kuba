@@ -1,15 +1,12 @@
 import React from "react";
 import "./Wedding.css";
-import slub from '../../assets/photos/Us/slub2.png';
-import wesele from '../../assets/photos/Us/wesele3.png';
-import poprawiny from '../../assets/photos/Us/poprawiny.png';
 const Wedding = () => {
   return (
     <div className="wedding-container">
       <h2>Kolejny krok zaplanowaliśmy w wyjątkowym miejscu..</h2>
       <div className="wedding-card-conteiner">
         <div className="wedding-card">
-          <div class="card-image"><img alt="Ślub plenerowy" src={slub} loading="lazy" /></div>
+          <div class="card-image"><img alt="Ślub plenerowy" src="images/slub.png" loading="lazy" /></div>
           <div className="card-content">
             <h2>Ślub</h2>
             <p>Na ceremonię zapraszamy Was do ogrodu Hotelu Dębowy</p>
@@ -18,7 +15,7 @@ const Wedding = () => {
           <div class="card-footer"><span>Środa, 18 czerwca 2025</span></div>
         </div>
         <div className="wedding-card">
-          <div class="card-image"><img alt="Wesele" src={wesele} loading="lazy" /></div>
+          <div class="card-image"><img alt="Wesele" src="images/wesele.png" loading="lazy" /></div>
           <div className="card-content">
             <h2>Wesele</h2>
             <p>Cały wieczór bawimy się na sali dębowej dostłownie 100 kroków od miejsca ceremonii.</p>
@@ -26,7 +23,7 @@ const Wedding = () => {
           <div class="card-footer"><span>Środa, 18 czerwca 2025</span></div>
         </div>
         <div className="wedding-card">
-          <div class="card-image"><img alt="Poprawiny" src={poprawiny} loading="lazy" /></div>
+          <div class="card-image"><img alt="Poprawiny" src="images/poprawiny.jpg" loading="lazy" /></div>
           <div className="card-content">
             <h2>Poprawiny</h2>
             <p>Następnego dnia zapraszamy na poprawinowego grilla w tym samym ogrodzie.</p>
