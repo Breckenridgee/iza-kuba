@@ -1,14 +1,18 @@
 import React from 'react';
 import './Carousel.css';
+import img2 from '../../assets/photos/Us/032-I&K-4N6A6131_mobile.jpg';
+import img1 from '../../assets/photos/Us/147-I&K-4N6A7463_mobile.jpg';
+import img3 from '../../assets/photos/Us/091-I&K-4N6A6730_mobile.jpg';
+import img4 from '../../assets/photos/Us/159-I&K-4N6A7640_mobile.jpg';
 
 const Carousel = () => {
   return (
     <div className="carousel-container">
       <div className="carousel">
-        <img src="https://iza-kuba-wedding.com/static/media/147-I&K-4N6A7463_mobile.7c4c1a6913686c189711.jpg?w=600&auto=format" alt={`carousel 1`} className="carousel-img" loading="lazy" />
-        <img src="https://iza-kuba-wedding.com/static/media/032-I&K-4N6A6131_mobile.97890beaa1cd4a9f5434.jpg?w=600&auto=format" alt={`carousel 2`} className="carousel-img" loading="lazy" />
-        <img src="https://iza-kuba-wedding.com/static/media/091-I&K-4N6A6730_mobile.3617fa5dad5da33ea308.jpg?w=600&auto=format" alt={`carousel 3`} className="carousel-img" loading="lazy" style={{ objectPosition: 'center' }} />
-        <img src="https://iza-kuba-wedding.com/static/media/159-I&K-4N6A7640_mobile.0eaeb4e7685e1665e3c2.jpg?w=600&auto=format" alt={`carousel 4`} className="carousel-img" loading="lazy" />
+        <img src={img1} alt={`carousel 1`} className="carousel-img" loading="lazy" />
+        <img src={img2} alt={`carousel 2`} className="carousel-img" loading="lazy" />
+        <img src={img3} alt={`carousel 3`} className="carousel-img" loading="lazy" style={{ objectPosition: 'center' }} />
+        <img src={img4} alt={`carousel 4`} className="carousel-img" loading="lazy" />
         <div className='carousel-mask' />
       </div>
       <div className='text-container'>
