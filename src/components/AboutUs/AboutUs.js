@@ -38,7 +38,7 @@ const AboutUs = () => {
         </div>
 
         <div class="square image-square square2">
-          <img src="https://iza-kuba-wedding.com/static/media/101-I&K-4N6A6838.ff78c1ebda5f775ffec5.jpg" alt="Iza" className="image" loading="lazy" />
+          <img src="images/101-I&K-4N6A6838.jpg" alt="Iza" className="image" loading="lazy" />
         </div>
       </div>
     </div>
