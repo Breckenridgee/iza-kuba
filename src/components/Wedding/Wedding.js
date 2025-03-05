@@ -23,7 +23,7 @@ const Wedding = () => {
           <div class="card-footer"><span>Środa, 18 czerwca 2025</span></div>
         </div>
         <div className="wedding-card">
-          <div class="card-image"><img alt="Poprawiny" src="images/poprawiny.jpg" loading="lazy" /></div>
+          <div class="card-image"><img alt="Poprawiny" src="images/poprawiny.png" loading="lazy" /></div>
           <div className="card-content">
             <h2>Poprawiny</h2>
             <p>Następnego dnia zapraszamy na poprawinowego grilla w tym samym ogrodzie.</p>
