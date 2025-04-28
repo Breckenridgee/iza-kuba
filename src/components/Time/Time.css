@@ -1,8 +1,9 @@
 .timeline-container {
   background-color: var(--secondary-color);
-  width: 90vw;
+  width: 90%;
   margin: 0 auto;
-  padding: 0 5vw;
+  padding: 0 5%;
+  max-width: 1800px;
 }
 
 .timeline {

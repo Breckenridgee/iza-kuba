@@ -1,5 +1,6 @@
 .wedding-container {
   width: 100vw;
+  max-width: 1800px;
   background-color: var(--default-color);
   justify-items: center;
   padding: 50px 0;
@@ -27,6 +28,7 @@
   justify-content: center;
   height: 100%;
   width: 30vw;
+  max-width: 500px;
   background-color: var(--secondary-color);
   border-radius: 10px;
   overflow: hidden;
